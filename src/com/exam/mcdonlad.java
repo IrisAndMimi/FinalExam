@@ -27,8 +27,9 @@ public class mcdonlad {
 
 				}
 			}
-			
+			ms.menu();
 			ms.on();
+			ms.writer();
 			
 		}catch (Exception e) {
 			System.out.println(e);
