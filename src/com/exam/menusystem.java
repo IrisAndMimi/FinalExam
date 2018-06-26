@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class menusystem {
 	List<Food> foods = new ArrayList<>();
+	List<Integer> chs = new ArrayList<>();
 	Scanner scanner = new Scanner(System.in);
 	Food food;
 	
@@ -20,18 +21,22 @@ public class menusystem {
 
 	public void on() {
 		int idlsr = -2;
+		int atlsr = -1;
 		while(idlsr != -1){
 				idlsr = -1;
 				System.out.print("請輸入餐點:");
 				idlsr = scanner.nextInt();
-				int atlsr = -1;
 				System.out.print("請輸入數量:");
 				atlsr = scanner.nextInt();
 		//		foods.contains(idlsr);
 				System.out.println("目前餐點:");
 				food = foods.get(idlsr-1);
 				System.out.println(food.getName()+" "+atlsr+"份");
-		}		
+				chs.add(idlsr);
+				chs.add(atlsr);
+				System.out.println(chs);
+		}
+		
 		
 	}
 
