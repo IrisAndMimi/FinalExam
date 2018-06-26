@@ -18,7 +18,6 @@ public class mcdonlad {
 			
 			for (int s = 0; s < 7; s++){
 				ary = br.readLine().split(",");
-//				int count = Integer.parseInt(ary[0]);
 				for (int i = 0; i < 1; i++){
 					int id = Integer.parseInt(ary[i*3]);
 					String name = ary[i*3+1];
