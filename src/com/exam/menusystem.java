@@ -8,9 +8,9 @@ public class menusystem {
 	
 	public void on(){
 
-//		for (int i=0; i< foods.size(); i++){
-//			Food foods = foods.get(i);
-//			System.out.println(foods.getId() + ") " + foods.getName() + "---" + foods.getPrice());
-//		}
+		for (int i=0; i< foods.size(); i++){
+			Food food = foods.get(i);
+			System.out.println(food.getId() + ") " + food.getName());
+		}
 	}
 }
